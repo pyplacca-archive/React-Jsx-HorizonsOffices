@@ -10,17 +10,19 @@ function importAll(r) {
 	return images;
 }
 
-const flags = importAll(
-	require.context("./images/flags", false, /\.(png|jpe?g|svg)$/)
-);
-const carousel = importAll(
-	require.context("./images/carousel", false, /\.(png|jpe?g|svg)$/)
-);
-const thumbs = importAll(
-	require.context("./images/thumb", false, /\.(png|jpe?g|svg)$/)
-);
 
 function App() {
+	
+	const flags = importAll(
+		require.context("./images/flags", false, /\.(png|jpe?g|svg)$/)
+	);
+	const carousel = importAll(
+		require.context("./images/carousel", false, /\.(png|jpe?g|svg)$/)
+	);
+	const thumbs = importAll(
+		require.context("./images/thumb", false, /\.(png|jpe?g|svg)$/)
+	);
+
 	return (
 		<div className="container">
 			<nav>
