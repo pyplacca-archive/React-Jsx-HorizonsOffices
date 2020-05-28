@@ -28,9 +28,9 @@ function App() {
 					<img src={logo} alt="Horizon Offices"></img>
 				</a>
 				<div className="flags">
-					{["gh.svg", "ng.svg", "ke.svg"].map((c) => (
+					{["gh", "ng", "ke"].map((c) => (
 						<a href="">
-							<img src={flags[c]} alt={c.split(".")[0]}></img>
+							<img src={flags[`${c}.svg`]} alt={c}></img>
 						</a>
 					))}
 				</div>
